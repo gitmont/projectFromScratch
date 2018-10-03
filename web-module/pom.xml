@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>web-module</artifactId>
+	<packaging>war</packaging>
+
+	<parent>
+		<groupId>at.questproject</groupId>
+		<artifactId>root</artifactId>
+		<version>${parent-version}</version>
+	</parent>
+
+	<profiles>
+		<profile>
+			<id>all</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<rp.build.warname>all</rp.build.warname>
+			</properties>
+			<dependencies>
+				<dependency>
+					<groupId>at.questproject</groupId>
+					<artifactId>base-module</artifactId>
+					<version>${project.parent.version}</version>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>${maven-war.version}</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<warName>${rp.build.warname}</warName>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

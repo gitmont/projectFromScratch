@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>at.questproject</groupId>
+	<artifactId>root</artifactId>
+	<version>${parent-version}</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<parent-version>0.0.1-SNAPSHOT</parent-version>
+		<java.version>1.8</java.version>
+		<maven-compiler.version>3.5</maven-compiler.version>
+		<maven-war.version>3.2.1</maven-war.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>all</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<modules>
+				<module>base-module</module>
+				<module>web-module</module>
+			</modules>
+		</profile>
+	</profiles>
+
+</project>

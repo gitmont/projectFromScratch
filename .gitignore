@@ -1,0 +1,26 @@
+######################
+# Maven
+######################
+.log
+*.log
+*.log.[0-9]*
+**/log
+target/
+**/target
+**/overlays
+**/antrun
+META-INF/
+*.factorypath
+
+######################
+# Eclipse
+######################
+.csv
+.project
+.metadata/
+bin/
+**/bin
+.classpath
+.settings/
+**/.settings
+.recommenders/
