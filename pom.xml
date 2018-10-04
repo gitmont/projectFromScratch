@@ -16,9 +16,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<junit.version>3.8.1</junit.version>
-		<springframework.version>5.1.0.RELEASE</springframework.version>
-		<jackson.library>2.9.7</jackson.library>
-		<javax.servlet-api.version>4.0.1</javax.servlet-api.version>
 	</properties>
 
 	<profiles>
