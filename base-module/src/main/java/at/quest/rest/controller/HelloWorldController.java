@@ -19,7 +19,7 @@ public class HelloWorldController {
 //	@GET
 	@RequestMapping(value = "hello", method = RequestMethod.GET)
 	public ResponseEntity<String> helloWorldMethod() {
-		return new ResponseEntity<String>("KONACNO", HttpStatus.OK);
+		return new ResponseEntity<>("KONACNO", HttpStatus.OK);
 	}
 
 }
