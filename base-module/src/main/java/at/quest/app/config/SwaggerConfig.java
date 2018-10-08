@@ -26,7 +26,7 @@ public class SwaggerConfig {
 
 	private ApiInfo apiInfo() {
 		ApiInfo apiInfo = new ApiInfo("Rest API", "Rest API Example", "1", "",
-				new Contact("Edwin", "http://edwin.baculsoft.con", "edwin@baculsoft.com"), "Apache License", "");
+				new Contact("Dominik", "http://quest.at", "dominik@quest.at"), "Apache License", "");
 		return apiInfo;
 	}
 }
