@@ -1,4 +1,4 @@
-package com.edw.spring4swagger.config;
+package at.quest.app.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

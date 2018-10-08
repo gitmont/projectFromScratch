@@ -1,4 +1,4 @@
-package com.edw.spring4swagger.bean;
+package at.quest.entites;
 
 public class Test {
 
